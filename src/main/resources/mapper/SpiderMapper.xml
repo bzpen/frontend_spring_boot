@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiazhi.demo.dao.SpiderMapper">
+
+    <select id="getSpiderList" resultType="Spider">
+        select *
+        from tb_spider
+    </select>
+
+    <select id="getSpiderId" resultType="Spider">
+        select *
+        from tb_spider where spiderName=#{spiderName}
+    </select>
+
+
+
+</mapper>

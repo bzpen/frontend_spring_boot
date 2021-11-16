@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xiazhi.demo.dao.SampleMapper">
+
+    <select id="getSampleList" resultType="Sample_Spider">
+        SELECT tb_sample.*, tb_user.userName,tb_spider.spiderName
+        FROM
+        (tb_sample left join tb_user ON tb_user.userId=tb_sample.userId)
+        left join tb_spider ON tb_spider.spiderId=tb_sample.spiderId
+    </select>
+
+    <select id="getSampleList_user" resultType="Sample_Spider">
+        SELECT tb_sample.*, tb_user.userName,tb_spider.spiderName
+        FROM
+        (tb_sample left join tb_user ON tb_user.userId=tb_sample.userId)
+        left join tb_spider ON tb_spider.spiderId=tb_sample.spiderId
+        where tb_user.userName= #{userName}
+    </select>
+
+    <select id="getSelectResult" resultType="Sample_Spider">
+        SELECT tb_sample.*, tb_user.userName,tb_spider.spiderName
+        FROM
+        (tb_sample left join tb_user ON tb_user.userId=tb_sample.userId)
+        left join tb_spider ON tb_spider.spiderId=tb_sample.spiderId
+        where
+            tb_user.userName like concat('%',#{str},'%') or
+            tb_sample.sampleNumber like concat('%',#{str},'%') or
+            tb_spider.spiderName like concat('%',#{str},'%')
+
+    </select>
+
+    <insert id="insertSample" parameterType="Sample">
+        insert into
+        tb_sample(sampleNumber,spiderId,userId,sampleGenetic,sampleTime,sampleLocations,
+        sampleList,sampleLength,sampleInstruct,sampleJdu,sampleWdu)
+        values
+        (#{sampleNumber},#{spiderId},#{userId},#{sampleGenetic},#{sampleTime},#{sampleLocations},
+        #{sampleList},#{sampleLength},#{sampleInstruct},#{sampleJdu},#{sampleWdu})
+    </insert>
+
+
+    <update id="updateSample" parameterType="Sample">
+        UPDATE tb_sample SET sampleJdu = #{sampleJdu},sampleWdu=#{sampleWdu} WHERE sampleId = #{sampleId}
+    </update>
+
+    <select id="getSample" resultType="Sample">
+        select *
+        from tb_sample
+    </select>
+
+    <select id="checkSampleNumber" resultType="Sample">
+        select *
+        from tb_sample where sampleNumber = #{sampleNumber}
+    </select>
+
+
+
+</mapper>

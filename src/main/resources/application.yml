@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.qq.com
+    username: 3118659412@qq.com
+    password: iecshggikvevdfic
+  datasource:
+    username: root
+    password: bzp510719
+    url: jdbc:mysql://localhost:3306/spider_data?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: /static/**
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+mybatis:
+  type-aliases-package: com.xiazhi.demo.model
+  mapper-locations: classpath:mapper/*Mapper.xml
