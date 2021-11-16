@@ -5,9 +5,10 @@ import com.xiazhi.demo.model.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-/*
-*  Mapper注解由Mybatis提供  所以自动装配时会报错，但不影响运行
-*  Repository 注解由spring boot 提供，在自动装配时不会报错
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
  */
 @Mapper
 @Repository

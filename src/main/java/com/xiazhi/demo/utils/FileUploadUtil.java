@@ -17,6 +17,11 @@ import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class FileUploadUtil {
 
     private static final String pathname = "D:/Vue毕设项目/毕设后台/src/main/resources/static/image/avatar/";

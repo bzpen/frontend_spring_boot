@@ -7,6 +7,11 @@ import com.xiazhi.demo.model.extension.Sample_Spider;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public interface SampleService {
     List<Sample_Spider> getSampleList();
 

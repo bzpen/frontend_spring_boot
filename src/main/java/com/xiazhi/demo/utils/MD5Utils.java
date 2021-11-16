@@ -3,6 +3,11 @@ package com.xiazhi.demo.utils;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class MD5Utils {
     /**
      * MD5加密类

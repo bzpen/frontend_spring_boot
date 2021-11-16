@@ -8,6 +8,11 @@ import com.xiazhi.demo.model.User;
 
 import java.util.Date;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class TokenUtil {
 
     private static final long EXPIRE_TIME = 15 * 24 * 60 * 60 * 1000;

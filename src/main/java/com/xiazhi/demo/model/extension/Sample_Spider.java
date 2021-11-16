@@ -5,6 +5,10 @@ import com.xiazhi.demo.model.Sample;
 /**
  *  扩展实体类，用于多表数据合并
  *
+ *
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
  */
 public class Sample_Spider extends Sample {
 

@@ -8,10 +8,14 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/*
+/**
 *   token签名拦截器
-**
+ *
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
  */
+
 public class TokenInterceptor implements HandlerInterceptor {
 
     @Override

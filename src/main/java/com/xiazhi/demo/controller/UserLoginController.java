@@ -19,6 +19,11 @@ import java.util.HashMap;
 
 import static com.xiazhi.demo.utils.TokenUtil.sign;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Controller
 @Slf4j
 @RequestMapping("/user")

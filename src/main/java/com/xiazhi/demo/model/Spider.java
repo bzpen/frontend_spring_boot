@@ -1,5 +1,10 @@
 package com.xiazhi.demo.model;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class Spider {
     private int spiderId;
     private String spiderName;

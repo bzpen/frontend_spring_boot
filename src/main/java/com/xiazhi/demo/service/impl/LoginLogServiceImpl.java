@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Service
 @Slf4j
 public class LoginLogServiceImpl implements LoginLogService {

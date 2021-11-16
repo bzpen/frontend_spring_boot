@@ -2,6 +2,11 @@ package com.xiazhi.demo.service;
 
 import com.xiazhi.demo.model.User;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public interface UserService {
 
     //    使用账号登录查询

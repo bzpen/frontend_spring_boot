@@ -8,6 +8,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.web.servlet.config.annotation.*;
 
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 

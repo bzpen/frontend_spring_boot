@@ -20,7 +20,11 @@ import java.util.Map;
 import java.util.Random;
 
 
-
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Controller
 @RequestMapping("/email")
 @Slf4j

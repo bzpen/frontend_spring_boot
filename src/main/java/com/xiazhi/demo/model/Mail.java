@@ -1,6 +1,11 @@
 package com.xiazhi.demo.model;
 
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class Mail {
     private String userMail;
     private  String code;

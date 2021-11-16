@@ -18,6 +18,11 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Service
 @Slf4j
 public class SampleServiceImpl implements SampleService {

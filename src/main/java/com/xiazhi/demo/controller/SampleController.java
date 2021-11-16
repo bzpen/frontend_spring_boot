@@ -22,6 +22,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 @Controller
 @ResponseBody
 @Slf4j

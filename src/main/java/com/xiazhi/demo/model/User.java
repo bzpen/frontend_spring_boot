@@ -2,6 +2,11 @@ package com.xiazhi.demo.model;
 
 import java.util.Date;
 
+/**
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
+ */
 public class User {
     private Integer userId;        //id标识
     private String userName;   //用户名

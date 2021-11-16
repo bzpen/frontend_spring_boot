@@ -27,6 +27,10 @@ import java.util.Map;
 
 /***
  * 静态文件访问
+ *
+ * @author   kaito kuroba
+ * @Email   3118659412@qq.com
+ * @since   2021/10/10
  */
 @Controller
 @Slf4j
